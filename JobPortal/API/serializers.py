@@ -207,6 +207,10 @@ class PostJobSerializer(ModelSerializer):
         if count > 0:
             print(company[0])
             self.update(company[0],validated_data)
+            print("1111",company[0],company)
+            company = Company.objects.filter(profile=self.context['request'].user.profile)
+            print("2222",company)
+            company[0].delete()
         else:
             user_obj.save()
         return validated_data
