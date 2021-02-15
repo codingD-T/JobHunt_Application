@@ -35,17 +35,16 @@
 {% for c in companies %}
 
 
-[10:34 PM] 1911053_SY_SHAH DISHA NEHAL
-
 <div class="card-wrapper">
     <div class="card-grid-space">
-        <div class="card cardt mx-auto"style="background-color: rgb(149, 165, 238); color: black;">
+
+        <div class="card cardt mx-auto" style="background-color: rgb(149, 165, 238); color: black;">
             <div>
-                <h1>{​​​​​{​​​​​c.name}​​​​​}​​​​​</h1>
-                <p>Salary: {​​​​​{​​​​​c.salary}​​​​​}​​​​​ per month <br> Experience required: {​​​​​{​​​​​c.experience}​​​​​}​​​​​ yrs <br>Location: {​​​​​{​​​​​c.Location}​​​​​}​​​​​ <br>Job Description: {​​​​​{​​​​​c.description}​​​​​}​​​​​</p>
-                <div class="date">For position of {​​​​​{​​​​​c.position}​​​​​}​​​​​</div>
+                <h1>{{c.name}}</h1>
+                <p>Salary: {{c.salary}} per month <br> Experience required: {{c.experience}} yrs <br>Location: {{c.Location}} <br>Job Description: {{c.description}}</p>
+                <div class="date">For position of {{c.position}}</div>
                 <div class="tags">
-                    <div class="tag"style="color: rgb(8, 8, 8);">Applied</div>
+                    <div class="tag" style="color: rgb(8, 8, 8);">Applied</div>
                 </div>
               </div>
             </div>
