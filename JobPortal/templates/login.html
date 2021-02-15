@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+{% load static%}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container card" style="font-family: Sofia, sans-serif; color: white; ">
+    <h1 class="border-bottom mb-4" style="color: #3c3163;">Login</h1>
+    <div class=" box jumbotron container" style="background-color: rgb(2, 2, 2);">
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <fieldset class="form-group">
+
+            {{ form|crispy }}
+        </fieldset>
+        <input class="btn btn-outline-info" type="submit" value="Login" style="text-decoration: none;">
+        <p>Do not have an account?  <a href='{% url "register" %}'>Register</a></p>
+    </form>
+    </div>
+</div>
+{% endblock %}

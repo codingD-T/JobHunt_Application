@@ -1,0 +1,66 @@
+{% extends 'main.html' %}
+{% load static%}
+{% block content %}
+
+<!--<div class="container card">
+    <h1 class="border-bottom mb-4">Candidates applied</h1>
+    <div class="card-body">
+        <table class="table table-hover styled-table">
+            <tr>
+                <th>Name</th>
+                <th>DOB</th>
+                <th>Resume</th>
+                <th>Gender</th>
+                <th>Mobile</th>
+                <th>Email</th>
+                <th>Hire</th>
+            </tr>
+            {% for c in candidates %}
+                <tr>
+                    <td>{{c.name}}</td>
+                    <td>{{c.dob}}</td>
+                    {% if c.resume %}
+                    <td><a href='{{c.resume.url}}' download >{{c.resume}}</a></td></a></td>
+                    {% else %}
+                    <td>Not submitted</td>
+                    {% endif %}
+                    <td>{{c.gender}}</td>
+                    <td>{{c.mobile}}</td>
+                    <td>{{c.email}}</td>
+                    <td><a href="" class="btn btn-outline-info" type="submit">Hire</a></td>
+
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>-->
+
+
+
+    <h1 class="pghead border-bottom">Candidates applied</h1>
+<br><br>
+
+  {% for c in candidates %}
+
+
+    <div class="card-wrapper">
+    <div class="card-grid-space">
+
+        <div class="card cardt mx-auto" style="background-color: black;color: black;">
+            <div>
+                <h1>{{c.name}}</h1>
+                <p>{{c.email}} <br> {{c.gender}} <br> {{c.mobile}} <br> <a href='{{c.resume.url}}'>{{c.resume}}</a></p>
+                <div class="date">D.O.B {{c.dob}}</div>
+                <div class="tags">
+                  <a href="" class="tag" style="color: white;">HIRE</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    </div>
+    <br>
+    <br>
+
+    {% endfor %}
+
+{% endblock %}

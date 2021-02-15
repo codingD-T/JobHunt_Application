@@ -1,0 +1,58 @@
+{% extends 'main.html' %}
+{% load static%}
+
+{% block content %}
+<!--<div class="container card">
+    <h1 class="border-bottom mb-4">Jobs you applied</h1>
+    <div class="card-body">
+        <table class="table table-hover styled-table">
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Description</th>
+                <th>Salary</th>
+                <th>Experience</th>
+                <th>Location</th>
+                <th>Status</th>
+            </tr>
+            {% for c in companies %}
+                <tr>
+                    <td>{{c.name}}</td>
+                    <td>{{c.position}}</td>
+                    <td>{{c.description}}</td>
+                    <td>{{c.salary}}</td>
+                    <td>{{c.experience}}</td>
+                    <td>{{c.Location}}</td>
+                    <td>---</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>   -->
+<h1 class="pghead border-bottom mb-4">Your Applications</h1>
+<br>
+<br>
+{% for c in companies %}
+
+
+    <div class="card-wrapper">
+    <div class="card-grid-space">
+
+        <div class="card cardt mx-auto" style="background-color: black;">
+            <div>
+                <h1>{{c.name}}</h1>
+                <p>Salary {{c.salary}} <br> Exp {{c.experience}} <br>Loc {{c.Location}} <br> {{c.description}}</p>
+                <div class="date">{{c.position}}</div>
+                <div class="tags">
+                  <div class="tag" style="color: beige;">Applied</div>
+                </div>
+              </div>
+            </div>
+            </div>
+    </div>
+    <br>
+    <br>
+
+    {% endfor %}
+
+{% endblock %}

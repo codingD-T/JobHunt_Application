@@ -1,0 +1,80 @@
+{% extends "main.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<style>
+  .links{
+    padding: 0;
+border: none;
+background: none;
+  }
+  .hov :hover {
+  background-color: rgba(124, 190, 228, 0.479);
+}
+</style>
+<div class="container" style="font-family: Sofia, sans-serif; font-size: 20px;">
+  <div class="row">
+    <div class="col-6" style="background-color: rgb(233, 241, 241); box-shadow: 0 0 5em -1em rgb(240, 179, 179);;">
+      <div class="media">
+        <img class="rounded-circle" src="{{ user.profile.image.url }}" height="100px" width="100px">
+        <h2>{{ user.username }}</h2>
+
+      </div>
+        <div>
+          {% if user.profile.bio %}
+          <h3 class="text-secondary">{{ user.profile.bio }}</h3>
+          {% endif %}
+          {% if user.email %}
+          <p class="text">Email: {{ user.email }}</p>
+          {% endif %}
+          {% if user.profile.dob %}
+          <p class="text">Date of Birth: {{ user.profile.dob }}</p>
+          {% endif %}
+          {% if user.profile.mobile %}
+          <p class="text">Mobile Number: {{ user.profile.mobile }}</p>
+          {% endif %}
+          {% if user.profile.resume %}
+          <p><a href="{{ user.profile.resume.url }}" style="color: rgb(114, 114, 207); font-size: 30px; text-decoration: none;">Resume</a></p>
+          {% endif %}
+
+        </div>
+           </div>
+           <div class="col-6" style="text-align-last: center;">
+            <div class="accordion md-accordion" id="accordionEx" role="tablist">
+
+              <!-- Accordion card -->
+              <div class="card">
+
+                <!-- Card header -->
+                <div class="card-header" role="tab" id="headingOne1">
+                  <a data-toggle="collapse" class="text" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                    <h5 class="mb-0 btn links" style="font-size: 30px;">
+                      more . . .
+                    </h5>
+                  </a>
+                </div>
+
+                <!-- Card body -->
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                  data-parent="#accordionEx">
+                  <div class="card-body">
+                    <p class="hov"><a class="btn links" href ="{% url 'applications' %}">Your Applications</a></p>
+          <hr>
+          <p class="hov"><a class="btn links" href ="{% url 'jobs' %}">Jobs Posted</a></p>
+        <hr>
+
+      <p class="hov"><a class="btn links" href ="{% url 'profileUpdate' %}">Update Profile</a></p>
+      <hr>
+      <p class="hov"><a class="btn links" href ="{% url 'deleteAccount' %}">Delete Account</a></p>
+      <hr>
+                  </div>
+                </div>
+
+              </div>
+            <hr>
+
+
+    </div>
+    </div>
+    </div>
+{% endblock content %}

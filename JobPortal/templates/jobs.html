@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+{% load static%}
+{% block content %}
+<h1 class="pghead border-bottom mb-4">Jobs You Posted</h1>
+<br>
+<br>
+{% for c in companies %}
+    <div class="card-wrapper">
+    <div class="card-grid-space">
+
+        <div class="card cardt mx-auto" style="background-color: black;">
+            <div>
+                <h1>{{c.name}}</h1>
+                <p>Salary {{c.salary}} <br> Exp {{c.experience}} <br>Loc {{c.Location}} <br> {{c.description}}</p>
+                <div class="date">{{c.position}}</div>
+                <div class="tags">
+                    <a href ="{% url 'applicants' c.id %}" class="tag" type="submit" style="color: rgb(241, 232, 232); text-decoration: none;">Applicants</a>
+                    <a href ="{% url 'jobupdate' c.id %}" class="tag" type="submit"style="color: rgb(250, 248, 248); text-decoration: none;">Update</a>
+                    <a href ="{% url 'jobdelete' c.id %}" class="tag" type="submit"style="color: rgb(247, 241, 241); text-decoration: none;">Delete</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    </div>
+    <br>
+    <br>
+
+    {% endfor %}
+
+{% endblock %}
