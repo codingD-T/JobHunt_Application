@@ -9,9 +9,9 @@ from .views import (
     )
 
 urlpatterns = [
-    url(r'^login/$', UserLoginAPIView.as_view(), name='login'),
+    url(r'^login/$', UserLoginAPIView.as_view(), name='loginAPI'),
     url(r'^logout/$', logoutUser, name='logoutAPI'),
-    url(r'^register/$', UserCreateAPIView.as_view(), name='register'),
+    url(r'^register/$', UserCreateAPIView.as_view(), name='registerAPI'),
     url(r'^auth/$', UserAuthentication.as_view(), name='authenticate'),
     url(r'^home/$', home, name='homeAPI'),
     url(r'^postjob/$', PostJobAPIView.as_view(), name='postjobAPI'),
