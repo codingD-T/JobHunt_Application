@@ -253,7 +253,6 @@ class UpdateProfileAPIView(CreateAPIView):
 
 class ApplyJobAPIView(RetrieveAPIView):
     queryset = Company.objects.all()
-    print(queryset)
     permission_classes = [IsAuthenticated]
 
     def post(self, request):
