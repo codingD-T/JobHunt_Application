@@ -25,7 +25,7 @@ SECRET_KEY = 'kyqm(gv26)8i@o*m112due*@#7$demtj@*$yvpfemxgm2$voy!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ 'jobportal-disha-tushar.herokuapp.com']
+ALLOWED_HOSTS = [ 'jobhunt-disha-tushar.herokuapp.com']
 
 
 # Application definition
@@ -151,8 +151,8 @@ STATIC_URL = '/static/'
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 CRISPY_TEMPLATE_PACK='bootstrap4'
-# LOGIN_REDIRECT_URL = 'home'
-# LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+LOGIN_URL = 'login'
 #AUTH_USER_MODEL = 'JobPortal.user2'
 
 django_heroku.settings(locals())
