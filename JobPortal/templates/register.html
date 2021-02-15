@@ -2,17 +2,29 @@
 {% load crispy_forms_tags %}
 {% load static%}
 {% block content %}
-<div class="container card" style="font-family: Sofia, sans-serif; color: white; ">
+<div class="container card" style="font-family: 'Times New Roman', Times, serif; color: rgb(0, 0, 0); ">
+
     <h1 class="border-bottom mb-4" style="color: #3c3163;">Register</h1>
-    <div class=" box jumbotron container" style="background-color: rgb(2, 2, 2);">
+
+    <div class=" box jumbotron container" style="background-color: rgb(149, 165, 238);">
+
+
 
     <form method="POST"  action="">
-        {% csrf_token %}
-        {{form|crispy}}
-        <input class="btn btn-outline-info btn-lg" type="submit" value="Register">
-        <p>Already have an account?  <a href='{% url "login" %}'>Login</a></p>
+
+        {​​% csrf_token %}​​
+
+        {​​{​​form|crispy}​​}​​
+
+        <input class="btn btn-light btn-lg" type="submit" value="Register">
+
+        <p>Already have an account?  <a href='{​​% url "login" %}​​' style="color: black;">Login</a></p>
+
     </form>
 
+
+
 </div>
+
 </div>
 {% endblock %}

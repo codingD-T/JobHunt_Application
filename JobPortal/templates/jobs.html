@@ -8,15 +8,15 @@
     <div class="card-wrapper">
     <div class="card-grid-space">
 
-        <div class="card cardt mx-auto" style="background-color: black;">
+        <div class="card cardt mx-auto" style="background-color: rgb(149, 165, 238); color: black;">
             <div>
                 <h1>{{c.name}}</h1>
-                <p>Salary {{c.salary}} <br> Exp {{c.experience}} <br>Loc {{c.Location}} <br> {{c.description}}</p>
-                <div class="date">{{c.position}}</div>
+                <p>Salary: {{c.salary}} per anum <br> Experience required: {{c.experience}} yrs <br>Location: {{c.Location}} <br>Job Description: {{c.description}}</p>
+                <div class="date">For position of {{c.position}}</div>
                 <div class="tags">
-                    <a href ="{% url 'applicants' c.id %}" class="tag" type="submit" style="color: rgb(241, 232, 232); text-decoration: none;">Applicants</a>
-                    <a href ="{% url 'jobupdate' c.id %}" class="tag" type="submit"style="color: rgb(250, 248, 248); text-decoration: none;">Update</a>
-                    <a href ="{% url 'jobdelete' c.id %}" class="tag" type="submit"style="color: rgb(247, 241, 241); text-decoration: none;">Delete</a>
+                    <a href ="{% url 'applicants' c.id %}" class="tag" type="submit" style="color: rgb(5, 5, 5); text-decoration: none;">Applicants</a>
+                    <a href ="{% url 'jobupdate' c.id %}" class="tag" type="submit"style="color: black; text-decoration: none;">Update</a>
+                    <a href ="{% url 'jobdelete' c.id %}" class="tag" type="submit"style="color: black; text-decoration: none;">Delete</a>
                 </div>
               </div>
             </div>

@@ -1,9 +1,9 @@
 {% extends "main.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-<div class="container card" style="font-family: Sofia, sans-serif; color: white; ">
+<div class="container card" style="font-family: 'Times New Roman', Times, serif; color: rgb(5, 5, 5); ">
     <h1 class="border-bottom mb-4" style="color: #3c3163;">Current Profile Info</h1>
-    <div class=" box jumbotron container" style="background-color: rgb(2, 2, 2);">
+    <div class=" box jumbotron container" style="background-color: rgb(149, 165, 238);">
 
       <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
@@ -13,7 +13,7 @@
             {{ p_form|crispy }}
         </fieldset>
         <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">Update</button>
+            <button class="btn btn-light" type="submit">Update</button>
         </div>
     </form>
     </div>

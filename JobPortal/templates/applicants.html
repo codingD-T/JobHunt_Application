@@ -43,16 +43,16 @@
   {% for c in candidates %}
 
 
-    <div class="card-wrapper">
+<div class="card-wrapper">
     <div class="card-grid-space">
 
-        <div class="card cardt mx-auto" style="background-color: black;color: black;">
+        <div class="card cardt mx-auto" style="background-color: rgb(149, 165, 238); color: black;">
             <div>
                 <h1>{{c.name}}</h1>
-                <p>{{c.email}} <br> {{c.gender}} <br> {{c.mobile}} <br> <a href='{{c.resume.url}}'>{{c.resume}}</a></p>
+                <p>Email ID: <a href = "mailto: {{c.email}}" style="color:black;">{{c.email}}</a> <br>Gender: {{c.gender}} <br>Mobile No.: {{c.mobile}} <br>Resume: <a href='{{c.resume.url}}' style="color:black;">{{c.resume}}</a></p>
                 <div class="date">D.O.B {{c.dob}}</div>
                 <div class="tags">
-                  <a href="" class="tag" style="color: white;">HIRE</a>
+                  <a href="" class="tag" style="color: rgb(0, 0, 0); text-decoration: none;">HIRE</a>
                 </div>
               </div>
             </div>

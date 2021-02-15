@@ -42,13 +42,13 @@
     <div class="card-wrapper">
     <div class="card-grid-space">
 
-        <div class="card cardt mx-auto" style="background-color: black;">
+        <div class="card cardt mx-auto" style="background-color: rgb(149, 165, 238); color: black;">
             <div>
                 <h1>{{c.name}}</h1>
-                <p>Salary {{c.salary}} <br> Exp {{c.experience}} <br>Loc {{c.Location}} <br> {{c.description}}</p>
-                <div class="date">{{c.position}}</div>
+                <p>Salary: {{c.salary}} per anum <br> Experience required: {{c.experience}} yrs <br>Location: {{c.Location}} <br>Job Description: {{c.description}}</p>
+                <div class="date">For position of {{c.position}}</div>
                 <div class="tags">
-                  <a href="{% url 'apply' c.id %}" class="tag" type="submit" style="color: beige; text-decoration: none;">Apply</a>
+                  <a href="{% url 'apply' c.id %}" class="tag" type="submit" style="text-decoration: none;">Apply</a>
                 </div>
               </div>
             </div>
