@@ -40,3 +40,8 @@ class postForm(ModelForm):
     class Meta:
         model=Company
         fields = "__all__"  
+#
+# class loginUserForm(ModelForm):
+#     class Meta:
+#         model = User
+#         fields = ['username','password']

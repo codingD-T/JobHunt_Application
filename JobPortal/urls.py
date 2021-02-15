@@ -9,7 +9,7 @@ from . import views
 
 urlpatterns = [
     path('',home,name='home'),    
-    path('register/',registerUser,name='register'),
+    path('register/',registerUser,name='registerUser'),
     path('apply/<int:pk>/',applyPage,name='apply'),
     path('hire/<int:pk>/',hireCandidates,name='hire'),
     path('profile/deleteAccount/', deleteAccount, name='deleteAccount'),
@@ -21,8 +21,8 @@ urlpatterns = [
     #path('<int:pk>/applypage',applypage.as_view(),name='applypage'),
     path('admin/', admin.site.urls),    
     path('profile/',profile, name='profile'),
-    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(template_name='logout.html'), name='logout'),  
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='loginUser'),
+    path('logout/', auth_views.LogoutView.as_view(template_name='logout.html'), name='logoutUser'),
     path('applicants/<int:pk>/',applicants,name='applicants'),
     path('applications/',applications,name='applications'),     
     path('jobs/', jobs, name='jobs'),
