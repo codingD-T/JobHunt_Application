@@ -24,7 +24,7 @@ joblib==1.0.1
 knox==0.1.11
 loguru==0.5.3
 nltk==3.5
-numpy==1.20.1
+numpy
 pickle-mixin==1.0.2
 Pillow==8.1.0
 psycopg2==2.8.6
