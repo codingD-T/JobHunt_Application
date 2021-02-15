@@ -1,1 +1,1 @@
-web: gunicorn jobhunt.wsgi
+web: gunicorn JobHunt.wsgi
