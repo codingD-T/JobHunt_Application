@@ -1,1 +1,1 @@
-web: gunicorn DataFlairJobPortal.wsgi 
+web: gunicorn jobhunt.wsgi

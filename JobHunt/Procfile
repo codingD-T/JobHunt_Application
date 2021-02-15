@@ -1,1 +1,0 @@
-web: gunicorn DataFlairJobPortal.wsgi --log-level=DEBUG --config python:classes.py
