@@ -328,6 +328,7 @@ def applications(request):
     can=Candidates.objects.filter(id=request.user.id)
     print(can)
     companies=Company.objects.filter(candidates__user=request.user)
+    print(companies)
     context={
         'companies':companies,
     }
@@ -345,7 +346,6 @@ def jobs(request):
     profile = Profile.objects.get(user= request.user)
     print(profile)
     companies=Company.objects.filter(profile= profile)
-    print(companies)
     context={
         'companies':companies,
     }
