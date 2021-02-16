@@ -66,9 +66,6 @@ def home(request):
                 can.append(i)
             for c in companyExcludeSet:
                 print("Secnd Lst",c)
-                can.remove(c)
-                print("Last",can)
-            print(can)
             context={
                 'companies':can,
             }
