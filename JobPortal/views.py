@@ -65,10 +65,7 @@ def home(request):
             for i in com:
                 can.append(i)
             for c in companyExcludeSet:
-                print("Secnd Lst",c)
                 can.remove(c)
-                print("Last",can)
-            print(can)
             context={
                 'companies':can,
             }
@@ -87,10 +84,9 @@ def home(request):
             for i in com:
                 can.append(i)
             for c in companyExcludeSet:
-                print("Secnd Lst", c)
+
                 can.remove(c)
-                print("Last", can)
-            print(can)
+
             context = {
                 'companies': can,
             }
@@ -112,10 +108,9 @@ def home(request):
             for i in com:
                 can.append(i)
             for c in companyExcludeSet:
-                print("Secnd Lst", c)
+
                 can.remove(c)
-                print("Last", can)
-            print(can)
+
             context = {
                 'companies': can,
             }
@@ -333,7 +328,6 @@ def applications(request):
     can=Candidates.objects.filter(id=request.user.id)
     print(can)
     companies=Company.objects.filter(candidates__user=request.user)
-    print(companies)
     context={
         'companies':companies,
     }
