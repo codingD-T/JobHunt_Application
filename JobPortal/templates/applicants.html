@@ -52,7 +52,7 @@
                 <p>Email ID: <a href = "mailto: {{c.email}}" style="color:black;">{{c.email}}</a> <br>Gender: {{c.gender}} <br>Mobile No.: {{c.mobile}} <br>Resume: <a href='{{c.resume.url}}' style="color:black;">{{c.resume}}</a></p>
                 <div class="date">D.O.B {{c.dob}}</div>
                 <div class="tags">
-                  <a href="" class="tag" style="color: rgb(0, 0, 0); text-decoration: none;">HIRE</a>
+                  <a href="{% url 'hire' c.id %}" class="tag" style="color: rgb(0, 0, 0); text-decoration: none;">HIRE</a>
                 </div>
               </div>
             </div>

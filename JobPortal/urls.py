@@ -26,7 +26,7 @@ urlpatterns = [
     path('applicants/<int:pk>/',applicants,name='applicants'),
     path('applications/',applications,name='applications'),     
     path('jobs/', jobs, name='jobs'),
-    path('profileUpdate/',profileUpdate,name='profileUpdate'),  
+    path('profileUpdate/',profileUpdate,name='profileUpdate'),
 ]
 
 if settings.DEBUG:
