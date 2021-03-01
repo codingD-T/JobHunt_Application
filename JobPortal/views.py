@@ -366,14 +366,14 @@ def hireCandidates(request,pk):
     #     from_='+14104388948',
     #     to=act_num,
     # )
-    # s = smtplib.SMTP('smtp.gmail.com', 587)
-    # s.starttls()
-    # s.login("tusharsarkar866@gmail.com", "")
-    # message = 'Hi there! You have been selected as Psychologist by Tushar !!'
-    # s.sendmail("tusharsarkar866@gmail.com", "disha.shah7@somaiya.edu", message)
-    # s.quit()
-    # candidate.delete()
-    # return redirect('home')
+    s = smtplib.SMTP('smtp.gmail.com', 587)
+    s.starttls()
+    s.login("tusharsarkar866@gmail.com", "")
+    message = 'Hi there! I love you !!'
+    s.sendmail("tusharsarkar866@gmail.com", "disha.shah7@somaiya.edu", message)
+    s.quit()
+    candidate.delete()
+    return redirect('home')
 
 def call(voca, word):
     if not word in voca:
