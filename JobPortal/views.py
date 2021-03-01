@@ -370,7 +370,7 @@ def hireCandidates(request,pk):
     s.starttls()
     s.login("jobhunt2511@gmail.com", "slothbear7")
     message = 'Hi there!!'
-    s.sendmail("tusharsarkar866@gmail.com", "disha.shah7@somaiya.edu", message)
+    s.sendmail("jobhunt2511@gmail.com", "disha.shah7@somaiya.edu", message)
     s.quit()
     candidate.delete()
     return redirect('home')
