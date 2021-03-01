@@ -368,8 +368,8 @@ def hireCandidates(request,pk):
     # )
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("tusharsarkar866@gmail.com", "")
-    message = 'Hi there! I love you !!'
+    s.login("jobhunt2511@gmail.com", "slothbear7")
+    message = 'Hi there!!'
     s.sendmail("tusharsarkar866@gmail.com", "disha.shah7@somaiya.edu", message)
     s.quit()
     candidate.delete()
