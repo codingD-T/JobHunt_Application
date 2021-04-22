@@ -1,4 +1,4 @@
-<h1 align="center">Ajnabee :sloth:</h1>
+<h1 align="center">Ajnabee :job:</h1>
 <div align="center">
   <br>
   <h3> Meet people in a revolutionary way.</h3>
