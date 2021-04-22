@@ -356,22 +356,6 @@ def hireCandidates(request,pk):
     pro = Profile.objects.get(user = candidate.user)
     number = pro.mobile
     print("Mobile number is: ",number)
-    # act_num = "+91" + str(number)
-    # account_sid = "AC510111d906955aadf5313191f772878c"
-    # auth_token = "85e668631462035f53be19712fd657bc"
-    # client = Client(account_sid, auth_token)
-    #
-    # message = client.messages.create(
-    #     body='Hi there! You have been selected as Psychologist by Tushar !!',
-    #     from_='+14104388948',
-    #     to=act_num,
-    # )
-    s = smtplib.SMTP('smtp.gmail.com', 587)
-    s.starttls()
-    s.login("jobhunt2511@gmail.com", "slothbear7")
-    message = 'Hi there!!'
-    s.sendmail("jobhunt2511@gmail.com", "disha.shah7@somaiya.edu", message)
-    s.quit()
     candidate.delete()
     return redirect('home')
 
