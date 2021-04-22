@@ -1,4 +1,4 @@
-<h1 align="center">JobHunt :dragon:</h1>
+<h1 align="center">JobHunt :gun:</h1>
 <div align="center">
   <br>
   <h3> Meet people in a revolutionary way.</h3>
