@@ -2,6 +2,8 @@
 <div align="center">
   
   <h2> Recruiting made easy. </h2>
+  <h3 align="center"><b>Check out the <a href="https://jobhunt-disha-tushar.herokuapp.com/">deployed app </a></b></h3>
+
 </div>
 
 <div align="center">
