@@ -17,8 +17,8 @@
 
 <div align="center">
   
-![img](screenshots\JobhuntUI.png)
-![img](screenshots\mobileappUI.jpg)  
+![img](screenshots/JobhuntUI.png)
+![img](screenshots/mobileappUI.jpg)  
 
 
 </div>
