@@ -2,7 +2,7 @@
 <div align="center">
   
   <h2> Recruiting made easy. </h2>
-  <h3 align="center"><b>Check out the <a href="https://jobhunt-disha-tushar.herokuapp.com/">deployed app </a></b></h3>
+  <h3 align="center"><b>Check out the <a href="https://jobhunt-disha-tushar.herokuapp.com/">deployed app </a>:heart:</b></h3>
 
 </div>
 
@@ -91,4 +91,4 @@ Start the project -
 
 
 ---
-<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/tusharsarkar3">Tushar Sarkar</a> :heart: <a href="https://github.com/dishaShah01">Disha Shah</a>.</b></h1>
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/tusharsarkar3">Tushar Sarkar</a> <a href="https://github.com/dishaShah01">Disha Shah</a>.</b></h1>
