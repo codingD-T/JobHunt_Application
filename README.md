@@ -1,7 +1,7 @@
 <h1 align="center">JobHunt :sloth: :dragon:</h1>
 <div align="center">
-  <br>
-  <h3> Recruiting made easy. </h3>
+  
+  <h2> Recruiting made easy. </h2>
 </div>
 
 <div align="center">
