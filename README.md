@@ -91,4 +91,4 @@ Start the project -
 
 
 ---
-<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/tusharsarkar3">Tushar Sarkar</a> <a href="https://github.com/dishaShah01">Disha Shah</a>.</b></h1>
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/tusharsarkar3">Tushar Sarkar</a>, <a href="https://github.com/dishaShah01">Disha Shah</a>.</b></h1>
